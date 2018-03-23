@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<h2>Sign Up page</h2>
+
+<form name = "EmpForm"  action = "{% url 'stored' %}" method = "POST"  >{% csrf_token %}
+      <div>
+          FirstName: <br>
+          <input type = "text" name = "FirstName">
+      </div>
+<br>
+    <div>
+          LastName: <br>
+          <input type = "text" name = "LastName">
+      </div>
+<br>
+      <div>
+          Phone_No: <br>
+          <input type = "text" name = "Phone_No">
+      </div>
+<br>
+      <div>
+          Email: <br>
+          <input type = "email" name = "Email">
+      </div>
+<br>
+      <div>
+          Address1: <br>
+          <input type = "text" name = "Address1">
+      </div>
+<br>
+      <div>
+          Address2: <br>
+          <input type = "text" name = "Address2">
+      </div>
+<br>
+      <div>
+          <input type = "submit" name = "Submit">
+      </div>
+<br>
+</form>
+
+</body>
+</html>
+
+
+
